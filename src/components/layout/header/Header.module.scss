@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik:200,300,400,500,600,700,800,900);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s;
+}
+
+.Header {
+  z-index: 100;
+  width: 100%;
+  background: #6441ff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  .Header_Wrapper {
+    width: 100%;
+    padding: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .Logo {
+      color: #802224;
+      font-family: "Playfair Display";
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .Links {
+      display: flex;
+      .link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        height: 41px;
+        flex-shrink: 0;
+        color: #000;
+
+        font-family: "Playfair Display";
+        font-size: 24px;
+        font-weight: 400;
+        text-decoration: none;
+        &:hover {
+          color: black;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
