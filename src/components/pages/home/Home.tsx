@@ -1,5 +1,6 @@
 import MainPage from "./Main_Page/MainPage";
 import Benefits from "./Benefits/Benefits";
+import Mission from "./Mission/Mission";
 import JoinUs from "./JoinUs/JoinUs";
 import Style from "./Home.module.scss";
 
@@ -11,6 +12,7 @@ const Home = () => {
           <MainPage />
           <Benefits />
           <JoinUs />
+          <Mission />
         </div>
       </div>
     </>
