@@ -1,5 +1,6 @@
 import Style from "./MainPage.module.scss";
 
+
 const MainPage = () => {
   return (
     <>

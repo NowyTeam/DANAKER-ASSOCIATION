@@ -1,0 +1,41 @@
+.wrappper_benefits {
+  width: 100%;
+  padding: 15vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .wrapper {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .box_benefits {
+      width: 105px;
+      height: 105px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: #802224;
+
+      img {
+        width: 50px;
+      }
+    }
+    .Columner {
+      p {
+        font-weight: 700;
+        font-size: 16;
+        margin-top: 21.33px;
+      }
+    }
+  }
+}
