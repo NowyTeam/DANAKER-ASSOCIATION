@@ -10,7 +10,7 @@
 .Header {
   z-index: 100;
   width: 100%;
-  background: #6441ff;
+  background: rgb(255, 255, 255);
 
   display: flex;
   justify-content: center;
@@ -21,7 +21,7 @@
   top: 0;
 
   .Header_Wrapper {
-    width: 100%;
+    width: 95%;
     padding: 13px;
 
     display: flex;
@@ -31,30 +31,52 @@
     .Logo {
       color: #802224;
       font-family: "Playfair Display";
-      font-size: 32px;
+      font-size: 28px;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
     }
-
-    .Links {
+    .bet_links {
+      width: 55%;
       display: flex;
-      .link {
+      justify-content: space-between;
+      .Links {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        height: 41px;
-        flex-shrink: 0;
-        color: #000;
+        .link {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 6px 20px;
+          height: 41px;
+          flex-shrink: 0;
+          color: #000;
 
-        font-family: "Playfair Display";
-        font-size: 24px;
-        font-weight: 400;
-        text-decoration: none;
-        &:hover {
-          color: black;
-          background-color: #fff;
+          font-family: "Playfair Display";
+          font-size: 24px;
+          font-weight: 400;
+          text-decoration: none;
+          &:hover {
+            color: black;
+            background-color: #fff;
+          }
+        }
+      }
+      .Donate {
+        .Donate_Link {
+          display: inline-flex;
+          padding: 6px 20px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          border: 1px solid #802224;
+
+          color: #000;
+
+          font-family: "Playfair Display";
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
         }
       }
     }

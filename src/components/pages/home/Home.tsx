@@ -1,4 +1,4 @@
-// import MainPage from "./Main_Page/MainPage";
+import MainPage from "./Main_Page/MainPage";
 import Style from "./Home.module.scss";
 
 const Home = () => {
@@ -6,7 +6,7 @@ const Home = () => {
     <>
       <div className={Style.Container}>
         <div className={Style.Wrapper_Container}>
-        
+          <MainPage />
         </div>
       </div>
     </>
