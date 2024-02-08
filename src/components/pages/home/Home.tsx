@@ -14,6 +14,10 @@ const Home = () => {
           <JoinUs />
           <Mission />
         </div>
+        <h1 className={Style.Wait_Cont}>
+          Сайт временно не доступен для телефон и планшетов просим прощение за
+          задержку
+        </h1>
       </div>
     </>
   );
