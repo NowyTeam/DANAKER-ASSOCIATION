@@ -8,14 +8,21 @@ interface ActiveLinkProps {
 }
 
 export const Header = () => {
+  const [delayedActivation, setDelayedActivation] = useState(false);
   const [headerScroll, setHeaderScroll] = useState(false);
 
   useEffect(() => {
     const changeBackground = () => {
       if (typeof window !== "undefined" && window.scrollY >= 10) {
         setHeaderScroll(true);
+
+        // Add a delay of 3 seconds before activating the "second_active" class
+        setTimeout(() => {
+          setDelayedActivation(true);
+        }, 1400);
       } else {
         setHeaderScroll(false);
+        setDelayedActivation(false);
       }
     };
 
@@ -29,61 +36,58 @@ export const Header = () => {
 
   const activeLink = ({ isActive }: ActiveLinkProps) => {
     return {
+      color: isActive ? "#802224" : "black",
       textDecoration: isActive ? "underline" : "none",
     };
   };
 
   return (
-    <>
-      <div className={Style.Header}>
+    <div className={`${Style.Header} ${headerScroll ? Style.active : ""}`}>
+      <div
+        className={`${Style.Header_Wrapper} ${
+          headerScroll ? Style.active : ""
+        }`}>
         <div
-          className={
-            headerScroll
-              ? `${Style.Header_Wrapper} ${Style.active}`
-              : `${Style.Header_Wrapper}`
-          }>
-          <div
-            className={
-              headerScroll ? `${Style.Logo} ${Style.active}` : `${Style.Logo}`
-            }>
-            <img src={Logo} alt="" />
-            <h1 className={Style.CalmLogo}>DANAKER ASSOCIATION</h1>
+          className={`${Style.Logo} ${headerScroll ? Style.active : ""} ${
+            delayedActivation && headerScroll ? Style.second_active : ""
+          }`}>
+          <img src={Logo} alt="" />
+          <h1 className={Style.CalmLogo}>DANAKER ASSOCIATION</h1>
+        </div>
+        <div className={Style.bet_links}>
+          <div className={Style.Links}>
+            <NavLink
+              to="/"
+              className={Style.link}
+              style={activeLink({ isActive: true })}>
+              Home
+            </NavLink>
+            <NavLink
+              to="/about"
+              className={Style.link}
+              style={activeLink({ isActive: false })}>
+              About us
+            </NavLink>
+            <NavLink
+              to="/events"
+              className={Style.link}
+              style={activeLink({ isActive: false })}>
+              Our Events
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className={Style.link}
+              style={activeLink({ isActive: false })}>
+              Contact
+            </NavLink>
           </div>
-          <div className={Style.bet_links}>
-            <div className={Style.Links}>
-              <NavLink
-                to="/"
-                className={Style.link}
-                style={activeLink({ isActive: true })}>
-                Home
-              </NavLink>
-              <NavLink
-                to="/"
-                className={Style.link}
-                style={activeLink({ isActive: false })}>
-                About us
-              </NavLink>
-              <NavLink
-                to="/"
-                className={Style.link}
-                style={activeLink({ isActive: false })}>
-                Our Events
-              </NavLink>
-              <NavLink
-                to="/"
-                className={Style.link}
-                style={activeLink({ isActive: false })}>
-                Contact
-              </NavLink>
-            </div>
-            <div className={Style.Donate}>
-              <NavLink to="/" className={Style.Donate_Link}>
-                DONATE
-              </NavLink>
-            </div>
+          <div className={Style.Donate}>
+            <NavLink to="/" className={Style.Donate_Link}>
+              DONATE
+            </NavLink>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
