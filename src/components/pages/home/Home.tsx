@@ -3,6 +3,8 @@ import Benefits from "./Benefits/Benefits";
 import Mission from "./Mission/Mission";
 import JoinUs from "./JoinUs/JoinUs";
 import Style from "./Home.module.scss";
+import OurPartners from "./OurPartners/OurPartners";
+import { Footer } from "../../layout/footer/Footer";
 
 const Home = () => {
   return (
@@ -13,6 +15,8 @@ const Home = () => {
           <Benefits />
           <JoinUs />
           <Mission />
+          <OurPartners />
+          <Footer />
         </div>
         <h1 className={Style.Wait_Cont}>
           Сайт временно не доступен для телефон и планшетов просим прощение за

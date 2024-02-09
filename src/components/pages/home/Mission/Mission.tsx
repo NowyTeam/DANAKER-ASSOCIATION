@@ -51,6 +51,7 @@ const Mission = () => {
                   contributions to the community and society at large.
                 </p>
               </div>
+              <button className={Style.checklot}>Read more</button>
             </div>
           </div>
         </div>

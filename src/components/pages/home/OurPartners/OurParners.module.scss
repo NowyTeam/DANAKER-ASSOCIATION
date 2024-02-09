@@ -1,0 +1,47 @@
+.wrapper {
+  width: 100%;
+  padding: 5vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .wrapper_width {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      color: #802224;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      width: 100%;
+    }
+
+    .partner_box {
+      margin-top: 30px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .partners {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 60%;
+        }
+        &:last-child {
+          img {
+            width: 70%;
+            margin-top: 50px;
+          }
+        }
+      }
+    }
+  }
+}
