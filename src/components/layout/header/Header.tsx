@@ -59,25 +59,25 @@ export const Header = () => {
             <NavLink
               to="/"
               className={Style.link}
-              style={activeLink({ isActive: true })}>
+              style={activeLink}>
               Home
             </NavLink>
             <NavLink
               to="/about"
               className={Style.link}
-              style={activeLink({ isActive: false })}>
+              style={activeLink}>
               About us
             </NavLink>
             <NavLink
               to="/events"
               className={Style.link}
-              style={activeLink({ isActive: false })}>
+              style={activeLink}>
               Our Events
             </NavLink>
             <NavLink
               to="/contact"
               className={Style.link}
-              style={activeLink({ isActive: false })}>
+              style={activeLink}>
               Contact
             </NavLink>
           </div>
