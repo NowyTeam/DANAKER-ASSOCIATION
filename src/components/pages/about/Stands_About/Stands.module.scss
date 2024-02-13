@@ -1,0 +1,41 @@
+.Stand_Wrap {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  .Stand_Wrapper {
+    width: 97%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .Main_box {
+      width: 100%;
+
+      .boxes {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        .Adapter_box {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+
+          h1 {
+            margin-bottom: 40px;
+            font-weight: 400;
+          }
+          p {
+            font-weight: 400;
+            width: 80%;
+            color: rgba(0, 0, 0, 0.818);
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
