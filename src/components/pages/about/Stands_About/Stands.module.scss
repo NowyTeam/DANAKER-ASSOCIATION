@@ -11,26 +11,64 @@
     flex-direction: column;
     align-items: center;
 
+    h1 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 400;
+      font-size: 40px;
+    }
+
     .Main_box {
       width: 100%;
 
       .boxes {
+        margin-top: 7rem;
+        margin-bottom: 7rem;
         width: 100%;
         display: flex;
         justify-content: space-between;
-        align-items: start;
+        align-items: center;
+        &:nth-child(2) {
+          flex-flow: row-reverse;
+          .Adapter_box {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            img {
+              width: 70%;
+            }
+          }
+        }
+
         .Adapter_box {
           width: 100%;
           display: flex;
           flex-direction: column;
 
+          img {
+            width: 100%;
+          }
+
           h1 {
+            width: 85%;
+            justify-content: start;
             margin-bottom: 40px;
             font-weight: 400;
+
+            span {
+              font-weight: 600;
+              margin-right: 2rem;
+            }
           }
           p {
             font-weight: 400;
-            width: 80%;
+            line-height: 28px;
+            width: 85%;
             color: rgba(0, 0, 0, 0.818);
             font-size: 20px;
           }

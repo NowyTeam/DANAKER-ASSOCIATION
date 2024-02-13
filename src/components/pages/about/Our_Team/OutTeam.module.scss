@@ -1,0 +1,63 @@
+.TeamBox_Main {
+  width: 100%;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  .TeamWrapper {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(270px, 1fr));
+    gap: 15px;
+
+    .box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .Chel {
+        width: 100%;
+        height: 100%;
+        border: solid 1px black;
+      }
+
+      .Team_Dis {
+        width: 100%;
+        min-height: 33rem;
+        padding: 0 15px;
+        h2 {
+          margin-top: 2.5rem;
+          margin-bottom: 0.7rem;
+          width: 100%;
+          display: flex;
+          font-size: 20px;
+          font-weight: 500;
+        }
+        hr {
+          width: 100%;
+          height: 2px;
+          border: none;
+          background-color: #802224;
+        }
+        h3 {
+          width: 100%;
+          margin-top: 1.5rem;
+          margin-bottom: 3rem;
+          width: 100%;
+          display: flex;
+          justify-content: start;
+          align-items: start;
+          font-size: 20px;
+          font-weight: 400;
+          img {
+            width: 26px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
