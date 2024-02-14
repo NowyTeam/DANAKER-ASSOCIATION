@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1300px;
+  min-width: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-btn {
+  padding: 5px 10px;
+  color: white;
+  text-transform: uppercase;
+
+  line-height: 23.17px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  background-color: white;
+  border: 1px solid #802224;
+}
+
+.my-btn:hover {
+  background-color: #802224;
+  color: #fff;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+}
+
+.section1 {
+  background-image: url("../../../../public/events_1.png");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.section1 h1 {
+  color: #fff;
+  font-size: 48px;
+  text-align: center;
+  margin-top: 25%;
+  margin-bottom: 25%;
+  text-shadow: #000000;
+}
+
+.textdisplay {
+  width: 800px;
+}
+
+.section2 {
+  margin-top: 100px;
+}
+
+.section2 h2 {
+  color: #131111;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.event {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.text-content {
+  width: 557px;
+}
+
+.btnreadmore {
+  padding: 17px 49px;
+
+  line-height: 23.17px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #802224;
+  background-color: white;
+  border: 1px solid #802224;
+  margin-top: 70px;
+}
+
+.btnreadmore:hover {
+  background-color: #802224;
+  color: #fff;
+}
+
+.text-content h3 {
+  margin-bottom: 10%;
+
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.text-content p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.sevent {
+  background-color: #efe7dc;
+}
+
+.sevent p {
+  font-size: 20px;
+}
+
+.sevent .text-content {
+  width: 600px;
+}
+
+.sevent p {
+  margin-bottom: -8%;
+}
+
+.sevent h3 {
+  margin-bottom: 2%;
+}
+
+.sevent .btnreadmore {
+  background-color: #efe7dc;
+}
+
+.sevent .btnreadmore:hover {
+  background-color: #802224;
+}
