@@ -26,7 +26,7 @@ const Stands = () => {
                 </p>
               </div>
               <div className={Style.Adapter_box}>
-                <img src="../../../../../public/about1.jpeg" alt="" />
+                <img src="../../../../../about1.jpeg" alt="" />
               </div>
             </div>
             <div className={Style.boxes}>
@@ -48,7 +48,7 @@ const Stands = () => {
                 </p>
               </div>
               <div className={Style.Adapter_box}>
-                <img src="../../../../../public/about2.jpeg" alt="" />
+                <img src="../../../../../about2.jpeg" alt="" />
               </div>
             </div>
             <div className={Style.boxes}>
@@ -70,7 +70,7 @@ const Stands = () => {
                 </p>
               </div>
               <div className={Style.Adapter_box}>
-                <img src="../../../../../public/about3.jpeg" alt="" />
+                <img src="../../../../../about3.jpeg" alt="" />
               </div>
             </div>
           </div>
