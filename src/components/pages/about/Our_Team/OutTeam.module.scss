@@ -1,6 +1,6 @@
 .TeamBox_Main {
   width: 100%;
-  padding: 20px 0 50px;
+  padding: 20px 0;
   display: grid;
   grid-template-columns: repeat(1, minmax(270px, 1fr));
 
@@ -32,7 +32,7 @@
   .TeamWrapper {
     width: 100%;
     display: grid;
-    padding: 100px 40px;
+    padding: 50px 40px;
     grid-template-columns: repeat(4, minmax(270px, 1fr));
     gap: 15px;
 
