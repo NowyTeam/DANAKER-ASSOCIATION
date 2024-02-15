@@ -1,5 +1,6 @@
 import React from 'react';
-import './Events.css'; // Подключите ваш файл стилей
+import './Events.css';
+import { Footer } from '../../layout/footer/Footer';
 
 const Events: React.FC = () => {
   return (
@@ -155,6 +156,7 @@ const Events: React.FC = () => {
 
         </section>
       </main>
+      <Footer />
     </div>
   );
 };
