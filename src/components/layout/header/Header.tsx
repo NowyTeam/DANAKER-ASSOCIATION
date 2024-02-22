@@ -56,28 +56,16 @@ export const Header = () => {
         </div>
         <div className={Style.bet_links}>
           <div className={Style.Links}>
-            <NavLink
-              to="/"
-              className={Style.link}
-              style={activeLink}>
+            <NavLink to="/" className={Style.link} style={activeLink}>
               Home
             </NavLink>
-            <NavLink
-              to="/about"
-              className={Style.link}
-              style={activeLink}>
+            <NavLink to="/about" className={Style.link} style={activeLink}>
               About us
             </NavLink>
-            <NavLink
-              to="/events"
-              className={Style.link}
-              style={activeLink}>
+            <NavLink to="/events" className={Style.link} style={activeLink}>
               Our Events
             </NavLink>
-            <NavLink
-              to="/contact"
-              className={Style.link}
-              style={activeLink}>
+            <NavLink to="/Contact" className={Style.link} style={activeLink}>
               Contact
             </NavLink>
           </div>
