@@ -1,22 +1,22 @@
 import React from "react";
-import "./Contacts.css";
+import Style from "./Contacts.module.scss";
 
 const ContactPage: React.FC = () => {
   return (
     <html lang="en">
       <body data-new-gr-c-s-check-loaded="14.1054.0" data-gr-ext-installed>
-        <main role="main" className="site-content">
-          <div className="flex-container container-1">
-            <div className="centered-text">
+        <main role="main" className={Style.siteContent}>
+          <div className={`${Style.flexContainer} ${Style.container1}`}>
+            <div className={Style.centeredText}>
               Let is make something awesome together
             </div>
           </div>
 
-          <div className="flex-container">
-            <div className="flex-item item-1">
+          <div className={Style.flexContainer}>
+            <div className={Style.flexItem1}>
               <div>
                 <h1
-                  className="display-4 mb-4 article-headline"
+                  className={`${Style.display4} ${Style.mb4} ${Style.articleHeadline}`}
                   style={{
                     fontSize: "48px",
                     fontFamily: "Playfair display",
@@ -157,7 +157,7 @@ const ContactPage: React.FC = () => {
             </div>
 
             <div
-              className="flex-item item-2"
+              className={Style.flexItem2}
               style={{
                 width: "565px",
                 height: "509px",
@@ -295,8 +295,8 @@ const ContactPage: React.FC = () => {
           <br />
           <br />
 
-          <div className="flex-container map-container">
-            <div className="map-container-2">
+          <div className={`${Style.flexContainer} ${Style.mapContainer}`}>
+            <div className={Style.mapContainer2}>
               <iframe
                 src="https://maps.google.com/maps?q=Chmielna%2073,%20Warsaw,%20Poland&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="600"
@@ -312,8 +312,8 @@ const ContactPage: React.FC = () => {
                 referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-            <div className="address">
-              <div className="address-2">
+            <div className={Style.address}>
+              <div className={Style.address2}>
                 <h2
                   style={{
                     fontSize: "35px",
@@ -343,11 +343,11 @@ const ContactPage: React.FC = () => {
                   <a>Chmielna 73, Warsaw, Poland</a>
                 </p>
               </div>
-              <div className="get-direction-container">
+              <div className={Style.getDirectionContainer}>
                 <p>
                   <a>
                     <div
-                      className="flex-item-1"
+                      className={Style.flexItem1}
                       style={{
                         fontSize: "20px",
                         marginLeft: "140px",

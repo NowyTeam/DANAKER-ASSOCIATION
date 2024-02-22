@@ -68,6 +68,9 @@ export const Header = () => {
             <NavLink to="/Contact" className={Style.link} style={activeLink}>
               Contact
             </NavLink>
+            <NavLink to="/Blog" className={Style.link} style={activeLink}>
+              Blog
+            </NavLink>
           </div>
           <div className={Style.Donate}>
             <NavLink to="/" className={Style.Donate_Link}>
