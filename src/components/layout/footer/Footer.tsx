@@ -3,6 +3,7 @@ import MainLogo from "../../../assets/main_logo.svg";
 import Insta from "../../../assets/instagramm.svg";
 import linked from "../../../assets/linkedIN.svg";
 import facebook from "../../../assets/facebook.svg";
+import { NavLink } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -19,11 +20,21 @@ export const Footer = () => {
               <div className={Style.footer_box}>
                 <h3>Get Involved</h3>
                 <div className={Style.footer_links}>
-                  <p>Home</p>
-                  <p>About us</p>
-                  <p>Whats on</p>
-                  <p>Blog</p>
-                  <p>Contact</p>
+                  <NavLink className={Style.linkFooter} to="/">
+                    <p>Home</p>
+                  </NavLink>
+                  <NavLink className={Style.linkFooter} to="/about">
+                    <p>About us</p>
+                  </NavLink>
+                  <NavLink className={Style.linkFooter} to="/events">
+                    <p>Our events</p>
+                  </NavLink>
+                  <NavLink className={Style.linkFooter} to="/blog">
+                    <p>Blog</p>
+                  </NavLink>
+                  <NavLink className={Style.linkFooter} to="/contact">
+                    <p>Contact</p>
+                  </NavLink>
                 </div>
               </div>
               <div className={Style.footer_box}>

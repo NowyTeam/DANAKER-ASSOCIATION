@@ -1,5 +1,6 @@
 import React from "react";
 import Style from "./Contacts.module.scss";
+import { Footer } from "../../layout/footer/Footer";
 
 const ContactPage: React.FC = () => {
   return (
@@ -363,6 +364,7 @@ const ContactPage: React.FC = () => {
               </div>
             </div>
           </div>
+          <Footer />
         </main>
       </body>
     </html>
